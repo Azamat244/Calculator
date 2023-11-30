@@ -4,15 +4,14 @@ public class ClaculatorKhafizovAR
 
  {
     public static void main(String[] args) {
-        //2+3
-        //X+V=XV
+        
         Converter converter = new Converter();
         String[] actions = {"+", "-", "/", "*"};
         String[] regexActions = {"\\+", "-", "/", "\\*"};
         Scanner scn = new Scanner(System.in);
         System.out.print("Введите выражение: ");
         String exp = scn.nextLine();
-        //Определяем арифметическое действие:
+
         int actionIndex=-1;
         for (int i = 0; i < actions.length; i++) {
             if(exp.contains(actions[i])){
